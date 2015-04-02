@@ -1,0 +1,71 @@
+{
+  "title": "Tiered Map",
+  "name": "tiered-map",
+  "version": "1.0.0",
+  "description": "A simple map of key value pairs with support for tiers (e.g. defaults go at tier 25, standards go at 50, and overrides go at tier 75)",
+  "homepage": "https://github.com/bevry/tiered-map",
+  "license": {
+    "type": "MIT"
+  },
+  "keywords": [
+    "attribute",
+    "attributes",
+    "model",
+    "map",
+    "tier",
+    "tiers",
+    "tiered"
+  ],
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "npmdownloads": true,
+    "david": true,
+    "daviddev": true,
+    "gratipay": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+  },
+  "author": "2015+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "bugs": {
+    "url": "https://github.com/bevry/tiered-map/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bevry/tiered-map.git"
+  },
+  "browsers": true,
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "assert-helpers": "^1.0.2",
+    "babel": "^4.7.16",
+    "babel-eslint": "^2.0.2",
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "coffee-script": "^1.9.1",
+    "eslint": "^0.17.1",
+    "joe": "^1.6.0",
+    "joe-reporter-console": "^1.2.1",
+    "projectz": "^0.5.0"
+  },
+  "main": "./es6guardian.js",
+  "scripts": {
+    "test": "node --harmony ./es5/test/tiered-map-test.js",
+    "browserify": "./node_modules/.bin/browserify ./web/index.js -t babelify --outfile ./web/out.js"
+  },
+  "cakeConfiguration": {
+    "BABEL_SRC_PATH": "es6",
+    "ESLINT_SRC_PATH": "es6"
+  }
+}
