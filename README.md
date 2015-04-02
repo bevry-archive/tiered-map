@@ -40,7 +40,7 @@ A simple map of key value pairs with support for tiers (e.g. defaults go at tier
 ### [Browserify](http://browserify.org/)
 - Use: `require('tiered-map')`
 - Install: `npm install --save tiered-map`
-- CDN URL: `//wzrd.in/bundle/tiered-map@1.0.0`
+- CDN URL: `//wzrd.in/bundle/tiered-map@1.0.1`
 
 ### [Ender](http://enderjs.com)
 - Use: `require('tiered-map')`
