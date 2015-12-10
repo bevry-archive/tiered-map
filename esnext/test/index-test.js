@@ -1,12 +1,15 @@
+/* eslint no-magic-numbers:0 */
+'use strict'
+
 // Import
-let joe = require('joe')
-let {equal} = require('assert-helpers')
-let TieredMap = require('../../')
+const joe = require('joe')
+const {equal} = require('assert-helpers')
+const TieredMap = require('../../')
 
 // Task
-joe.describe('mv', function (describe, it) {
+joe.describe('tiered-map', function (describe, it) {
 	it('should work', function () {
-		let m = new TieredMap()
+		const m = new TieredMap()
 		m.set('name', 'ben')
 		equal(m.get('name'), 'ben', 'expect name to be ben')
 		m.set('name', 'duran', 25)

@@ -1,4 +1,7 @@
-export default class TieredMap {
+/* eslint no-magic-numbers:0 */
+'use strict'
+
+module.exports = class TieredMap {
 	constructor (opts) {
 		this.highestAttributes = {}
 		this.attributesByTier = {}
@@ -7,15 +10,15 @@ export default class TieredMap {
 		this.setConfig(opts)
 	}
 
-	setConfig (opts={}) {
+	setConfig (opts = {}) {
 		if ( opts.onChangeListener ) {
 			this.onChangeListener = opts.onChangeListener
 		}
 
 		if ( opts.namedTiers ) {
-			for ( let key in opts.namedTiers ) {
+			for ( const key in opts.namedTiers ) {
 				if ( opts.namedTiers.hasOwnProperty(opts.namedTiers) ) {
-					let value: number = opts.namedTiers[key]
+					const value = opts.namedTiers[key]
 					this.setTier(key, value)
 				}
 			}
@@ -24,13 +27,13 @@ export default class TieredMap {
 		return this
 	}
 
-	setTier (key: string, value: number) {
+	setTier (key, value) {
 		this.namedTiers[key] = value
 		return this
 	}
 
-	getTier (key: mixed): ?number {
-		let type: string = typeof key
+	getTier (key) {
+		const type = typeof key
 		if ( type === 'number' ) {
 			return key
 		}
@@ -46,11 +49,11 @@ export default class TieredMap {
 		return this.setTiers[this.setTiers.length - 1]
 	}
 
-	isHighestTier (tier: mixed) {
+	isHighestTier (tier) {
 		return this.getTier(tier) === this.getHighestTier()
 	}
 
-	set (key: string, value: any, tier: ?mixed = 50) {
+	set (key, value, tier = 50) {
 		tier = this.getTier(tier)
 
 		if ( tier < 0 || tier > 100 ) {
@@ -64,8 +67,8 @@ export default class TieredMap {
 		}
 		attributes[key] = value
 
-		let oldValue = this.highestAttributes[key]
-		let newValue = this.getHighestValue(key)
+		const oldValue = this.highestAttributes[key]
+		const newValue = this.getHighestValue(key)
 		if ( oldValue !== newValue ) {
 			this.highestAttributes[key] = newValue
 			if ( this.onChangeListener ) {
@@ -76,7 +79,7 @@ export default class TieredMap {
 		return this
 	}
 
-	get (key: string, tier: ?number): any {
+	get (key, tier) {
 		if ( tier == null ) {
 			return this.highestAttributes[key]
 		}
@@ -85,11 +88,11 @@ export default class TieredMap {
 		}
 	}
 
-	getHighestValue (key: string) {
-		let tiers = this.setTiers
-		for ( let i = tiers.length-1; i>=0; --i ) {
-			let tier = tiers[i]
-			let value = this.get(key, tier)
+	getHighestValue (key) {
+		const tiers = this.setTiers
+		for ( let i = tiers.length - 1; i >= 0; --i ) {
+			const tier = tiers[i]
+			const value = this.get(key, tier)
 			if ( value != null ) {
 				return value
 			}

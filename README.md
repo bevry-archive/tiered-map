@@ -1,23 +1,25 @@
-
 <!-- TITLE/ -->
 
-# Tiered Map
+<h1>Tiered Map</h1>
 
 <!-- /TITLE -->
 
 
 <!-- BADGES/ -->
 
-[![Build Status](https://img.shields.io/travis/bevry/tiered-map/master.svg)](http://travis-ci.org/bevry/tiered-map "Check this project's build status on TravisCI")
-[![NPM version](https://img.shields.io/npm/v/tiered-map.svg)](https://npmjs.org/package/tiered-map "View this project on NPM")
-[![NPM downloads](https://img.shields.io/npm/dm/tiered-map.svg)](https://npmjs.org/package/tiered-map "View this project on NPM")
-[![Dependency Status](https://img.shields.io/david/bevry/tiered-map.svg)](https://david-dm.org/bevry/tiered-map)
-[![Dev Dependency Status](https://img.shields.io/david/dev/bevry/tiered-map.svg)](https://david-dm.org/bevry/tiered-map#info=devDependencies)<br/>
-[![Gratipay donate button](https://img.shields.io/gratipay/bevry.svg)](https://www.gratipay.com/bevry/ "Donate weekly to this project using Gratipay")
-[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
-[![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
-[![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
+<span class="badge-travisci"><a href="http://travis-ci.org/bevry/tiered-map" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/bevry/tiered-map/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-npmversion"><a href="https://npmjs.org/package/tiered-map" title="View this project on NPM"><img src="https://img.shields.io/npm/v/tiered-map.svg" alt="NPM version" /></a></span>
+<span class="badge-npmdownloads"><a href="https://npmjs.org/package/tiered-map" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/tiered-map.svg" alt="NPM downloads" /></a></span>
+<span class="badge-daviddm"><a href="https://david-dm.org/bevry/tiered-map" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/tiered-map.svg" alt="Dependency Status" /></a></span>
+<span class="badge-daviddmdev"><a href="https://david-dm.org/bevry/tiered-map#info=devDependencies" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/bevry/tiered-map.svg" alt="Dev Dependency Status" /></a></span>
+<br class="badge-separator" />
+<span class="badge-slackin"><a href="https://slack.bevry.me" title="Join this project's slack community"><img src="https://slack.bevry.me/badge.svg" alt="Slack community badge" /></a></span>
+<span class="badge-patreon"><a href="http://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+<span class="badge-gratipay"><a href="https://www.gratipay.com/bevry" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button" /></a></span>
+<span class="badge-flattr"><a href="http://flattr.com/thing/344188/balupton-on-Flattr" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
+<span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QB8GQPZAH84N6" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
+<span class="badge-bitcoin"><a href="https://bevry.me/bitcoin" title="Donate once-off to this project using Bitcoin"><img src="https://img.shields.io/badge/bitcoin-donate-yellow.svg" alt="Bitcoin donate button" /></a></span>
+<span class="badge-wishlist"><a href="https://bevry.me/wishlist" title="Buy an item on our wishlist for us"><img src="https://img.shields.io/badge/wishlist-donate-yellow.svg" alt="Wishlist browse button" /></a></span>
 
 <!-- /BADGES -->
 
@@ -31,20 +33,20 @@ A simple map of key value pairs with support for tiers (e.g. defaults go at tier
 
 <!-- INSTALL/ -->
 
-## Install
+<h2>Install</h2>
 
-### [NPM](http://npmjs.org/)
-- Use: `require('tiered-map')`
-- Install: `npm install --save tiered-map`
+<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>NPM</h3></a><ul>
+<li>Install: <code>npm install --save tiered-map</code></li>
+<li>Use: <code>require('tiered-map')</code></li></ul>
 
-### [Browserify](http://browserify.org/)
-- Use: `require('tiered-map')`
-- Install: `npm install --save tiered-map`
-- CDN URL: `//wzrd.in/bundle/tiered-map@1.0.1`
+<a href="http://browserify.org" title="Browserify lets you require('modules') in the browser by bundling up all of your dependencies"><h3>Browserify</h3></a><ul>
+<li>Install: <code>npm install --save tiered-map</code></li>
+<li>Use: <code>require('tiered-map')</code></li>
+<li>CDN URL: <code>//wzrd.in/bundle/tiered-map@1.0.2</code></li></ul>
 
-### [Ender](http://enderjs.com)
-- Use: `require('tiered-map')`
-- Install: `ender add tiered-map`
+<a href="http://enderjs.com" title="Ender is a full featured package manager for your browser"><h3>Ender</h3></a><ul>
+<li>Install: <code>ender add tiered-map</code></li>
+<li>Use: <code>require('tiered-map')</code></li></ul>
 
 <!-- /INSTALL -->
 
@@ -80,64 +82,64 @@ Very useful for having multiple tiers of data attributes with different prioriti
 
 <!-- HISTORY/ -->
 
-## History
-[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/bevry/tiered-map/blob/master/HISTORY.md#files)
+<h2>History</h2>
+
+<a href="https://github.com/bevry/tiered-map/blob/master/HISTORY.md#files">Discover the release history by heading on over to the <code>HISTORY.md</code> file.</a>
 
 <!-- /HISTORY -->
 
 
 <!-- CONTRIBUTE/ -->
 
-## Contribute
+<h2>Contribute</h2>
 
-[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/bevry/tiered-map/blob/master/CONTRIBUTING.md#files)
+<a href="https://github.com/bevry/tiered-map/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
 <!-- /CONTRIBUTE -->
 
 
 <!-- BACKERS/ -->
 
-## Backers
+<h2>Backers</h2>
 
-### Maintainers
+<h3>Maintainers</h3>
 
 These amazing people are maintaining this project:
 
-- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/tiered-map/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/tiered-map">view contributions</a></li></ul>
 
-### Sponsors
+<h3>Sponsors</h3>
 
 No sponsors yet! Will you be the first?
 
-[![Gratipay donate button](https://img.shields.io/gratipay/bevry.svg)](https://www.gratipay.com/bevry/ "Donate weekly to this project using Gratipay")
-[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
-[![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
-[![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
+<span class="badge-patreon"><a href="http://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+<span class="badge-gratipay"><a href="https://www.gratipay.com/bevry" title="Donate weekly to this project using Gratipay"><img src="https://img.shields.io/badge/gratipay-donate-yellow.svg" alt="Gratipay donate button" /></a></span>
+<span class="badge-flattr"><a href="http://flattr.com/thing/344188/balupton-on-Flattr" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
+<span class="badge-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QB8GQPZAH84N6" title="Donate to this project using Paypal"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" /></a></span>
+<span class="badge-bitcoin"><a href="https://bevry.me/bitcoin" title="Donate once-off to this project using Bitcoin"><img src="https://img.shields.io/badge/bitcoin-donate-yellow.svg" alt="Bitcoin donate button" /></a></span>
+<span class="badge-wishlist"><a href="https://bevry.me/wishlist" title="Buy an item on our wishlist for us"><img src="https://img.shields.io/badge/wishlist-donate-yellow.svg" alt="Wishlist browse button" /></a></span>
 
-### Contributors
+<h3>Contributors</h3>
 
 These amazing people have contributed code to this project:
 
-- [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/bevry/tiered-map/commits?author=balupton)
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/tiered-map/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/tiered-map">view contributions</a></li></ul>
 
-[Become a contributor!](https://github.com/bevry/tiered-map/blob/master/CONTRIBUTING.md#files)
+<a href="https://github.com/bevry/tiered-map/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
 <!-- /BACKERS -->
 
 
 <!-- LICENSE/ -->
 
-## License
+<h2>License</h2>
 
 Unless stated otherwise all works are:
 
-- Copyright &copy; 2015+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)
+<ul><li>Copyright &copy; 2015+ <a href="http://bevry.me">Bevry Pty Ltd</a></li></ul>
 
 and licensed under:
 
-- The incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://opensource.org/licenses/mit-license.php)
+<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
 
 <!-- /LICENSE -->
-
-
