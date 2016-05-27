@@ -1,10 +1,7 @@
-/* eslint no-magic-numbers:0 */
-'use strict'
-
 // Import
 const joe = require('joe')
 const {equal} = require('assert-helpers')
-const TieredMap = require('../../')
+const TieredMap = require('../')
 
 // Task
 joe.describe('tiered-map', function (describe, it) {

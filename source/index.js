@@ -1,6 +1,3 @@
-/* eslint no-magic-numbers:0 */
-'use strict'
-
 module.exports = class TieredMap {
 	constructor (opts) {
 		this.highestAttributes = {}
