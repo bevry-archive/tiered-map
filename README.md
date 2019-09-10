@@ -65,7 +65,7 @@ A simple map of key value pairs with support for tiers (e.g. defaults go at tier
 
 ## Usage
 
-``` javascript
+```javascript
 var TieredMap = require('tiered-map')
 
 var m = new TieredMap({
@@ -90,7 +90,6 @@ console.log(m.getTier('high'))  // will output 75
 ```
 
 Very useful for having multiple tiers of data attributes with different priorities. For example, you could have default values at tier 25, adjusted values at tier 50, and override values at tier 75.
-
 
 <!-- HISTORY/ -->
 
