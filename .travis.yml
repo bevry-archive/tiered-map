@@ -3,19 +3,19 @@ language: node_js
 node_js:
 - '8'
 - '10'
-- '11'
 - '12'
+- '13'
 matrix:
   fast_finish: true
   allow_failures: []
 cache: npm
 install:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/2d86ca6ebe8730048750eeeb3845e8857dc89aa0/scripts/node-install.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-install.bash)"
 before_script:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/2d86ca6ebe8730048750eeeb3845e8857dc89aa0/scripts/node-verify.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-verify.bash)"
 after_success:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/2d86ca6ebe8730048750eeeb3845e8857dc89aa0/scripts/node-publish.bash)"
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-publish.bash)"
 notifications:
   email:
     recipients:
-      secure: Rx71IoRT/YsjsPndE22yDDugd6YjDh1rozajpCu+t9pPl+4Xv/vjL23Xz0dQr7SApCVStdSdXcmhOpyJzoJ75LdMjr/vjhv41e5vysLChqR0W2agoSDTk3XxMC5Qg0bpdxq5MGGYKBGAyJa8sTjpccRXEpyTF6VHJs8BgDJM0rg=
+      secure: Abu2OB61ko1LSha4BskRNcYMX5Zel/90kD/zOiynVUSDG4/btDB6IOvtKBkafV9uU0P7MgCAaeu2fUELYM9f7TgJeL2rmiOVe/+AbB5gn1uXxFCKcF8xjOh629rdef8hxmzwEAgYOx0RfLWpHquZJJs7PAidy1DGNFjmXDyuPpw=
