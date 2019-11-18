@@ -4,7 +4,6 @@ node_js:
 - '8'
 - '10'
 - '12'
-- '13'
 matrix:
   fast_finish: true
   allow_failures: []
@@ -18,4 +17,4 @@ after_success:
 notifications:
   email:
     recipients:
-      secure: Abu2OB61ko1LSha4BskRNcYMX5Zel/90kD/zOiynVUSDG4/btDB6IOvtKBkafV9uU0P7MgCAaeu2fUELYM9f7TgJeL2rmiOVe/+AbB5gn1uXxFCKcF8xjOh629rdef8hxmzwEAgYOx0RfLWpHquZJJs7PAidy1DGNFjmXDyuPpw=
+      secure: YsSvGrRTMv0nRvYefZ+Pn7j2RwNE0Vq8zP4w915m57OqDw23tYnhyt9zobBg0/L6BJ3yJfY75NxgRE04zA7v5WYQ2KPg/eJfPPbN4VwDShqBxAMS8g+kWFJfrQfPa2gKgjE9NwAFJSj366nSJfZ7zbTvHjrxwY9N7PJiLJitIAo=
