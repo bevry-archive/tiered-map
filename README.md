@@ -33,35 +33,6 @@ A simple map of key value pairs with support for tiers (e.g. defaults go at tier
 <!-- /DESCRIPTION -->
 
 
-<!-- INSTALL/ -->
-
-<h2>Install</h2>
-
-<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
-<ul>
-<li>Install: <code>npm install --save tiered-map</code></li>
-<li>Require: <code>require('tiered-map')</code></li>
-</ul>
-
-<a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
-
-``` html
-<script type="module">
-    import * as pkg from '//dev.jspm.io/tiered-map'
-</script>
-```
-
-<h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
-
-<p>This package is published with the following editions:</p>
-
-<ul><li><code>tiered-map</code> aliases <code>tiered-map/source/index.js</code></li>
-<li><code>tiered-map/source/index.js</code> is esnext source code with require for modules</li>
-<li><code>tiered-map/edition-browsers/index.js</code> is esnext compiled for browsers with require for modules</li></ul>
-
-<!-- /INSTALL -->
-
-
 ## Usage
 
 ```javascript
@@ -90,6 +61,36 @@ console.log(m.getTier('high'))  // will output 75
 
 Very useful for having multiple tiers of data attributes with different priorities. For example, you could have default values at tier 25, adjusted values at tier 50, and override values at tier 75.
 
+<!-- INSTALL/ -->
+
+<h2>Install</h2>
+
+<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
+<ul>
+<li>Install: <code>npm install --save tiered-map</code></li>
+<li>Import: <code>import * as pkg from ('tiered-map')</code></li>
+<li>Require: <code>const pkg = require('tiered-map')</code></li>
+</ul>
+
+<a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
+
+``` html
+<script type="module">
+    import * as pkg from '//dev.jspm.io/tiered-map@2.0.0'
+</script>
+```
+
+<h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
+
+<p>This package is published with the following editions:</p>
+
+<ul><li><code>tiered-map</code> aliases <code>tiered-map/index.js</code> which uses the <a href="https://github.com/bevry/editions" title="You can use the Editions Autoloader to autoload the appropriate edition for your consumers environment">Editions Autoloader</a> to automatically select the correct edition for the consumer's environment</li>
+<li><code>tiered-map/source/index.js</code> is <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> source code for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
+<li><code>tiered-map/edition-browsers/index.js</code> is <a href="https://en.wikipedia.org/wiki/ECMAScript#ES.Next" title="ECMAScript Next">ESNext</a> compiled for web browsers with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li></ul>
+
+<!-- /INSTALL -->
+
+
 <!-- HISTORY/ -->
 
 <h2>History</h2>
@@ -116,7 +117,7 @@ Very useful for having multiple tiers of data attributes with different prioriti
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/tiered-map/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/tiered-map">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/tiered-map/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/tiered-map">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -136,8 +137,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/tiered-map/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/tiered-map">view contributions</a></li>
-<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/tiered-map/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/tiered-map">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/tiered-map/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/tiered-map">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/tiered-map/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

@@ -6,8 +6,8 @@ const { equal } = require('assert-helpers')
 const TieredMap = require('./')
 
 // Task
-kava.suite('tiered-map', function(suite, test) {
-	test('should work', function() {
+kava.suite('tiered-map', function (suite, test) {
+	test('should work', function () {
 		const m = new TieredMap()
 		m.set('name', 'ben')
 		equal(m.get('name'), 'ben', 'expect name to be ben')
