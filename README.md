@@ -76,7 +76,7 @@ Very useful for having multiple tiers of data attributes with different prioriti
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/tiered-map@2.6.0'
+    import * as pkg from '//dev.jspm.io/tiered-map@2.7.0'
 </script>
 ```
 
