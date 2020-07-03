@@ -3,7 +3,7 @@
 // Import
 const kava = require('kava')
 const { equal } = require('assert-helpers')
-const TieredMap = require('./')
+const TieredMap = require('./index.js')
 
 // Task
 kava.suite('tiered-map', function (suite, test) {
